@@ -102,10 +102,5 @@ bin/plugin install /your/local/plugin/logstash-codec-bigmuddy-telemetry-gpb.gem
 
 ## Contributing
 
-All contributions are welcome: ideas, patches, documentation, bug reports, complaints, and even something you drew up on a napkin.
+Once all the necessary criteria are met, we will attempt to push this content to the [logstash-plugins](https://github.com/logstash-plugins) repository, and the corresponding gem to rubygems.org. Watch this space.
 
-Programming is not a required skill. Whatever you've seen about open source and maintainers or community members  saying "send patches or die" - you will not see that here.
-
-It is more important to the community that you are able to contribute.
-
-For more information about contributing, see the [CONTRIBUTING](https://github.com/elasticsearch/logstash/blob/master/CONTRIBUTING.md) file.
