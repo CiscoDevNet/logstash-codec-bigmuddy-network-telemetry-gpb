@@ -73,8 +73,8 @@ example.policy
 
 ## Troubleshooting
 
- | Error | Resolution
- | ----- | ----------
- | 'No encoding definition found for the requested schema path' | .map file missing from /telemetry/gpb/maps. Add the appropriate file from this repository
- | 'Encoded telemetry data too large for the packet MTU' | A single row doesn't fit in a UDP packet and rows cannot be fragmented so the data cannot be streamed. All of the paths provided can be streamed using an mtu of 1500 but below this some paths may not function and the only option is to remove them from the policy file
+ Error | Resolution 
+ ----- | ---------- 
+ 'No encoding definition found for the requested schema path' | .map file missing from /telemetry/gpb/maps. Add the appropriate file from this repository
+ 'Encoded telemetry data too large for the packet MTU' | A single row doesn't fit in a UDP packet and rows cannot be fragmented so the data cannot be streamed. All of the paths provided can be streamed using an mtu of 1500 but below this some paths may not function and the only option is to remove them from the policy file
 
