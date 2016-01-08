@@ -69,7 +69,18 @@ example.policy
 
 ## Router Configuration
 
+Use the following configuration to stream the data defined by the above policy. Mulitple policies and/or destinations can be configured, in which case all the data in the policies is streamed to all locations. 
+
+    telemetry encoder gpb
+      policy group examplegroup
+        policy example
+        destination ipv4 123.10.1.1 port 2222
+        
+ If different information needs to be sent to different destinations then multiple policy groups can be defined.
+
 ## Wire Format & Decoding
+
+The data is sent in UDP packets, each of which contains a TelemetryHeader GPB message defined in telemetry.proto in this repository. This in turn contains a repeated list of TelemetryTable objects for each row. Each one contains a path which can be used to identify the .proto file used to decode the bytes of the message. Assuming the policy contains a subset of the paths listed above then one of the .proto files in this repository can be used.
 
 ## Troubleshooting
 
