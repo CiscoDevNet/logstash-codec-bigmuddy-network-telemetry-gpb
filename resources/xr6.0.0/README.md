@@ -1,6 +1,6 @@
 # XR6.0.0 GPB Telemetry
 
-This folder contains the .proto and .map files needed to stream and decode a selection of commonly used data from ASR9K and NCS5500 routers running IOS XR version 6.0.0. 
+This folder contains the .proto and .map files needed to stream and decode a selection of commonly used data from NCS5500 routers running IOS XR version 6.0.0. 
 
 Streaming telemetry data over GPB involves the following stages:
 
